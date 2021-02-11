@@ -1,0 +1,136 @@
+
+body{
+    --background-color:white;
+    --text-color:#1f1f20;
+    --secondary-color: white;
+    --icon-color: #1559eb;
+    --hover-color:#1f1f20 ;
+    overflow-x: hidden;    
+
+}
+
+.dark{
+    --background-color:#130f1f;
+    --text-color:white;
+    --secondary-color: #241f31;
+    --icon-color: rgb(221, 168, 21);
+    --hover-color: white;
+
+}
+
+.course {
+    padding-top: 60px;
+    background-color: var(--background-color);
+}
+
+.course iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.uk-card-body h3{
+    color: var(--icon-color) !important;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+}
+.uk-card-body p{
+    color: var(--text-color);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+}
+.course-d{
+    background: var(--background-color);
+}
+
+
+.content {
+    width: 420px;
+}
+
+.ratings {
+    background-color: var(--secondary-color);
+    padding: 30px 10px;
+    color: var(--text-color);
+    /* border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px #E0E0E0 */
+}
+
+.product-rating {
+    font-size: 50px
+}
+
+.stars i {
+    font-size: 18px;
+    color: var(--icon-color) !important
+}
+
+.rating-text {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+}
+
+.pro-talk h2{
+    color:var(--icon-color);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+
+}
+.pro-talk .row ul[uk-tab]{
+    border: none;
+}
+
+.pro-talk .row ul li a{
+    color: var(--text-color);
+}
+.pro-talk .row ul li .intro{
+    color: var(--text-color);
+}
+.pro-talk .row ul li .intro h4{
+    color: var(--icon-color);
+    font-weight: 600;
+
+}
+
+.pro-talk .row ul li .uk-card-default{
+    background-color: var(--secondary-color);
+}
+
+.pro-talk .row ul li .uk-card-default blockquote{
+    color: var(--text-color);
+}
+
+
+.pro-talk .row ul li .uk-accordion-content p{
+        color: var(--text-color) !important;
+}
+
+.pro-talk .row ul li .media{
+    color: var(--text-color);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+
+    
+}
+.pro-talk .row ul li .media img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.pro-talk .row ul li .media h5{
+    color: var(--icon-color);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+
+}
+.pro-talk .row ul li .media span{
+    color: var(--icon-color);
+    margin: 10px;
+    cursor: pointer;
+}
+.pro-talk .row ul li .add-co label{
+    color: var(--text-color);
+}

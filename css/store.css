@@ -1,0 +1,59 @@
+body{
+    --background-color:white;
+    --text-color:#1f1f20;
+    --secondary-color: white;
+    --icon-color: #1559eb;
+    --hover-color:#1f1f20 ;
+    overflow-x: hidden;    
+
+}
+
+.dark{
+    --background-color:#130f1f;
+    --text-color:white;
+    --secondary-color: #241f31;
+    --icon-color: rgb(221, 168, 21);
+    --hover-color: white;
+
+}
+
+
+.store{
+    padding-top: 100px;
+    background-color: var(--background-color);
+}
+.fil .box{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px rgb(46, 41, 47);
+    /* margin: 2px; */
+}
+
+.fil .box h2{
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'El Messiri', sans-serif; 
+}
+.fil .box i{
+    color: var(--icon-color);
+    font-size: 40px;
+    padding: 15px 0;
+}
+section.programs{
+    /* padding: 20px; */
+
+}
+section.programs .head{
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+section.programs .head span{
+    color: var(--icon-color);
+    cursor: pointer;
+    font-size: 20px;
+}
