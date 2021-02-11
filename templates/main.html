@@ -1,0 +1,254 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg fixed-top {{darkMode}} wow animate__fadeIn" dir="{{dir}}">
+    <a class="navbar-brand" href="#">{{navbar[langInd].brand}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav {{mr}}-auto pr-4">
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.home"><i class="fa fa-home"></i> {{navbar[langInd].home}}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="app.courses"><i class="fa fa-book" aria-hidden="true"></i> {{navbar[langInd].store}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" uk-toggle="target: #modal-close-default" ui-sref="app.login1"><i class="fa fa-user"></i> {{navbar[langInd].contact}}</a>
+
+<!-- This is the modal with the default close button -->
+          <div id="modal-close-default" style="margin-top: 20px;" uk-modal>
+              <div class="uk-modal-dialog uk-modal-body login">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class=""  dir="{{dir}}">
+                      <ul class="uk-flex-center" uk-tab uk-switcher>
+                        <li class="uk-active"><a href="#">{{modal[langInd].login}}</a></li>
+                        <li><a href="#">{{modal[langInd].rig}}</a></li>
+                     </ul>
+                      <ul class="uk-switcher uk-margin">
+                        <li class="wow animate__fadeIn">
+                                                    <!-- Default form login -->
+                          <form class="text-center" dir="{{dir}}" action="#!">
+
+                              <p class="h4 mb-4">{{modal[langInd].login}}</p>
+
+                              <!-- Email -->
+                              <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">{{modal[langInd].input[2]}}</label>
+                             </div>
+                              <!-- Password -->
+                              <div class="md-form mb-0">
+                                <input type="password" id="email" name="email" class="form-control">
+                                <label for="email" class="">{{modal[langInd].input[1]}}</label>
+                              </div>
+
+                              <div class="d-flex justify-content-around">
+                                  <div>
+                                      <!-- Remember me -->
+                                      <div class="custom-control custom-checkbox">
+                                          <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                          <label class="custom-control-label" for="defaultLoginFormRemember">{{modal[langInd].input[5]}}</label>
+                                      </div>
+                                  </div>
+                                  <div>
+                                      <!-- Forgot password -->
+                                      <a href="">{{modal[langInd].input[6]}}</a>
+                                  </div>
+                              </div>
+
+                              <!-- Sign in button -->
+                              <button class="btn btn-info btn-block my-4" type="submit">{{modal[langInd].login}}</button>
+
+
+                              <!-- Social login -->
+                              <p>{{modal[langInd].or}}</p>
+
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+                          </form>
+<!-- Default form login -->
+                        </li>
+                        <li class="wow animate__fadeIn">
+                                      <!-- Default form register -->
+                          <form class="text-center" action="#!" >
+                          
+                              <p class="h4 mb-4">{{modal[langInd].rig}}</p>
+                          
+                              <div class="form-row mb-4">
+                                  <div class="col">
+                                      <!-- First name -->
+                                      <div class="md-form mb-0">
+                                          <input type="text" id="email" name="email" class="form-control">
+                                          <label for="email" class="">{{modal[langInd].input[0]}}</label>
+                                      </div>        </div>
+                                  <div class="col">
+                                      <!-- Last name -->
+                                      <div class="md-form mb-0">
+                                          <input type="text" id="email" name="email" class="form-control">
+                                          <label for="email" class="">{{modal[langInd].input[4]}}</label>
+                                      </div>        </div>
+                              </div>
+                          
+                              <!-- E-mail -->
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">{{modal[langInd].input[2]}}</label>
+                              </div>
+                              <!-- Password -->
+                              <div class="md-form mb-0">
+                                  <input type="password" id="email" name="email" class="form-control">
+                                  <label for="email" class="">{{modal[langInd].input[1]}}</label>
+                              </div>  
+                          
+                              <!-- Phone number -->
+                              <div class="md-form mb-0">
+                                  <input type="password" id="email" name="email" class="form-control">
+                                  <label for="email" class="">{{modal[langInd].input[3]}}</label>
+                              </div>
+
+                          
+                              <!-- Newsletter -->
+                              <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                                  <label class="custom-control-label" for="defaultRegisterFormNewsletter">{{modal[langInd].input[5]}}</label>
+                              </div>
+                          
+                              <!-- Sign up button -->
+                              <button class="btn btn-info my-4 btn-block" type="submit">{{modal[langInd].rig}}</button>
+                          
+                              <!-- Social register -->
+                              <p>{{modal[langInd].or}}</p>
+                          
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                              <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+                          
+                              <hr>
+                          
+                              <!-- Terms of service -->
+ 
+                          </form>
+              <!-- Default form register -->
+                      </li>                      
+                    </ul>
+                    </div>
+                </div>
+          </div>
+      </ul>
+      <ul class="navbar-nav {{ml}}-auto nav-flex-icons">
+
+        <!-- lang section -->
+  
+        <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" ng-click="langAr();ml='mr';mr='ml'">
+                <img src="../img/download.jpeg" width="30px" alt="">
+                العربيه
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light" ng-click="lang();ml='ml';mr='mr'">
+                <img src="../img/download.png" width="30px" alt="">
+                English
+            </a>
+          </li>
+      <!-- end lang section -->
+   
+
+        <li class="nav-item" dir="{{dir}}">
+            <a class="nav-link waves-effect waves-light"  ng-click="darkMode='dark';lable=false">
+              <i class="fa fa-moon"></i>
+            </a>
+          </li>
+
+        <!-- <li class="nav-item" style="margin-top: 6px;"">
+          
+          <div class="custom-control custom-switch " dir="{{dir}}">
+            <input type="checkbox" class="custom-control-input" ng-checked="lable" disabled id="customSwitches">
+            <label class="custom-control-label" for="customSwitches"></label>
+          </div>
+        </li> -->
+
+
+        <li class="nav-item" dir="{{dir}}" ng-click="darkMode='';lable=true">
+            <a class="nav-link waves-effect waves-light">
+              <i class="fa fa-sun"></i>
+            </a>
+        </li>
+
+
+        
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+  <div ui-view="sub"></div>
+
+  <!-- footer -->
+  <div class="container text-center">
+    <div class="bor"></div>
+</div>
+
+ 
+<footer class="page-footer font-small {{darkMode}}">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a >
+              <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a >
+              <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a \>
+              <i class="fab fa-google-plus-g fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a >
+              <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a >
+              <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a >
+              <i class="fab fa-pinterest fa-lg fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">{{footer[langInd].text}}
+      <a href="https://mdbootstrap.com/"> {{navbar[langInd].brand}}</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->

@@ -1,0 +1,192 @@
+<div class="store {{darkMode}}">
+
+    <section class="search container wow animate__fadeIn" dir="{{dir}}">
+        <form class="form-inline d-flex justify-content-center md-form form-sm active-pink active-pink-2 mt-2">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75 pr-4" type="text" placeholder="{{sear[langInd].head}}"
+              aria-label="Search">
+          </form>
+          <div class="container fil">
+          <div class="row">
+              <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                  <div class="box">
+                    <i class="fa fa-code"></i>
+                    <h2>{{sear[langInd].content[0]}}</h2>
+                  </div>
+              </div>
+               <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                  <div class="box">
+                    <i class="fa fa-store"></i>
+                    <h2>{{sear[langInd].content[1]}}</h2>
+                  </div>
+              </div>
+               <div class="col-md-2  col-sm-6 col-xs-4 text-center">
+                  <div class="box">
+                    <i class="fa fa-square-root-alt"></i>
+                    <h2>{{sear[langInd].content[02]}}</h2>
+                  </div>
+              </div>
+               <div class="col-md-2  col-sm-6 col-xs-4 text-center">
+                  <div class="box">
+                    <i class="fa fa-futbol"></i>
+                    <h2>{{sear[langInd].content[3]}}</h2>
+                  </div>
+              </div>
+               <div class="col-md-2  col-sm-6 col-xs-4 text-center">
+                  <div class="box">
+                    <i class="fa fa-book"></i>
+                    <h2>{{sear[langInd].content[4]}}</h2>
+                  </div>
+              </div>
+               <div class="col-md-2  col-sm-6 col-xs-4 text-center">
+                  <div class="box">
+                    <i class="fa fa-code"></i>
+                    <h2>{{sear[langInd].content[0]}}</h2>
+                  </div>
+              </div>
+          </div> 
+        </div>
+    </section>
+
+    <section class="programs container-fluid wow animate__fadeIn">
+      <div class="head">
+        <span class="uk-align-left" dir="{{dir}}">{{sear[langInd].content[0]}}</span>
+        <span class="uk-align-right" dir="{{dir}}">{{view[langInd]}}<i class="fa fa-arrow-right"></i></span>
+      </div>
+
+      <section class="container-fluid best-courses">
+        <!-- <h2 class="text-center p-4">{{moc[langInd].head}}</h2> -->
+        <div class="uk-slider-container-offset" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+                    <li ng-repeat="most in mostPo">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="{{most.img}}" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">{{most.name}}</h3>
+                                <h4 class="uk-card-title">{{most.teacher}}</h4>
+                                <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                <div class="inrol text-center">
+                                    <button class="uk-button uk-button-primary" ng-click="programs(most)" ui-sref="app.course">{{moc[langInd].button}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+      </section>
+    </section>
+
+    <section class="programs container-fluid wow animate__fadeIn">
+      <div class="head">
+        <span class="uk-align-left" dir="{{dir}}">{{sear[langInd].content[1]}}</span>
+        <span class="uk-align-right" dir="{{dir}}">{{view[langInd]}}<i class="fa fa-arrow-right"></i></span>
+      </div>
+
+      <section class="container-fluid best-courses">
+        <!-- <h2 class="text-center p-4">{{moc[langInd].head}}</h2> -->
+        <div class="uk-slider-container-offset" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+                    <li ng-repeat="most in mostPo">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="{{most.img}}" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">{{most.name}}</h3>
+                                <h4 class="uk-card-title">{{most.teacher}}</h4>
+                                <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                <div class="inrol text-center">
+                                    <button class="uk-button uk-button-primary" ng-click="programs(most)" ui-sref="app.course">{{moc[langInd].button}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+      </section>
+    </section>
+
+    <section class="programs container-fluid wow animate__fadeIn">
+      <div class="head">
+        <span class="uk-align-left" dir="{{dir}}">{{sear[langInd].content[2]}}</span>
+        <span class="uk-align-right" dir="{{dir}}">{{view[langInd]}}<i class="fa fa-arrow-right"></i></span>
+      </div>
+
+      <section class="container-fluid best-courses">
+        <!-- <h2 class="text-center p-4">{{moc[langInd].head}}</h2> -->
+        <div class="uk-slider-container-offset" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                <ul class="uk-slider-items uk-child-width-1-4@s uk-grid">
+                    <li ng-repeat="most in mostPo">
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="{{most.img}}" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">{{most.name}}</h3>
+                                <h4 class="uk-card-title">{{most.teacher}}</h4>
+                                <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                <div class="inrol text-center">
+                                    <button class="uk-button uk-button-primary" ng-click="programs(most)" ui-sref="app.course">{{moc[langInd].button}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+      </section>
+    </section>
+
+
+
+    <ul class="uk-pagination uk-flex-center wow animate__fadeIn" uk-margin>
+      <li><a href="#"><span uk-pagination-previous></span></a></li>
+      <li><a href="#">1</a></li>
+      <li class="uk-disabled"><span>...</span></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li class="uk-active"><span>7</span></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li class="uk-disabled"><span>...</span></li>
+      <li><a href="#">20</a></li>
+      <li><a href="#"><span uk-pagination-next></span></a></li>
+  </ul>
+    
+</div>

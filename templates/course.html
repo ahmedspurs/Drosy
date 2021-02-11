@@ -1,0 +1,123 @@
+<div dir="{{dir}}" class="course {{darkMode}}">
+
+
+        <div dir="{{dir}}" class="course-d uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin text-center wow animate__fadeIn" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="{{pimg}}" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">{{pname}}</h3>
+                    <p>{{pteacher}}</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="content text-center">
+                            <div class="ratings"> <span class="product-rating">4.6</span><span>/5</span>
+                                <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                <div class="rating-text"> <span>46 {{aboutP[langInd].rate[0]}} & 15 {{aboutP[langInd].rate[1]}}</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container pro-talk wow animate__fadeIn">
+            <h2 class="text-center">{{aboutP[langInd].head}}</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul uk-tab uk-switcher>
+                        <li class="uk-active"><a href="#">{{intro[langInd].head}}</a></li>
+                        <li><a href="#">{{faq[langInd].head}}</a></li>
+                        <li><a href="#">{{comments[langInd]}}</a></li>
+                    </ul>
+                    
+                    <ul class="uk-switcher uk-margin">
+                        <li>
+                            <div class="uk-child-width-expand@s intro" uk-grid>
+                                <div>
+                                    <h4>{{intro[langInd].con}}</h4>
+                                    <ul class="uk-list uk-list-hyphen">
+                                        <li dir="{{dir}}">{{intro[langInd].content}}</li>
+                                        <li dir="{{dir}}">{{intro[langInd].content}}</li>
+                                        <li dir="{{dir}}">{{intro[langInd].content}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container">
+                                    <img src="../img/users/3.jpg" alt="" uk-cover>
+                                    <canvas width="600" height="400"></canvas>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">{{intro[langInd].teacher}}</h3>
+                                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">{{faq[langInd].qs[0]}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{faq[langInd].content}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{faq[langInd].qs[1]}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{faq[langInd].content}}</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">{{faq[langInd].qs[0]}}</a>
+                                <div class="uk-accordion-content">
+                                    <p>{{faq[langInd].content}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                       </li>
+                        <li>
+                            <div class="media" ng-repeat="comm in comment">
+                                <img class="d-flex mr-3" src="{{comm.img}}" alt="Generic placeholder image">
+                                <div class="media-body">
+                                  <h5 class="mt-0 font-weight-bold">{{comm.name}}</h5>
+                                  <span class="uk-align-right">12:45</span>
+                                    {{comm.comment}}
+                                  <div class="me-icon">
+                                    <span class="fa fa-heart"></span>
+                                    <span class="fa fa-reply"></span>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="container add-co">
+                                
+                                <div class="md-form mb-0">
+                                    <input type="text" ng-model="name" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">{{addC[langInd].name}}</label>
+                                </div>
+                               
+                                <div class="md-form mt-4">
+                                    <textarea type="text" ng-model="com" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">{{addC[langInd].comment}}</label>
+                                </div>
+
+                                <button class="uk-button uk-button-primary" ng-click="addCom(name,com)">{{addC[langInd].c}}</button>
+                              </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 p-4">
+                    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="1920" height="1080" autoplay="false" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+
+                </div>
+            </div>
+        </section>
+
+        
+</div>
